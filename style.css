@@ -1,12 +1,14 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
   background-color: #429d93;
 }
 
 body {
-  margin: 0;
   display: grid;
   grid-template-columns: 110px auto;
 }
@@ -20,7 +22,6 @@ header {
 }
 
 header h2 {
-  margin: 0;
   height: 100px;
   line-height: 100px;
   font-size: 3rem;
@@ -31,7 +32,7 @@ header h2 {
 header h2:hover {
   color: #73fbd3;
   transition: 0.5s;
-  transform: translateY(-5px);
+  transform: translateY(2px);
 }
 
 nav {
@@ -46,17 +47,13 @@ nav {
 
 nav ul {
   display: grid;
-  margin: 0;
   margin: 5px;
-  padding: 0;
   list-style: none;
 }
 
 nav li {
   width: 80px;
   height: 80px;
-  margin: 0;
-  padding: 0;
   background-color: #0b7189;
   align-self: center;
   justify-self: center;
@@ -70,8 +67,9 @@ nav li:hover {
 }
 
 nav a {
-  margin: 0;
-  padding: 0;
+  display: block;
+  width: 80px;
+  height: 80px;
   text-decoration: none;
   font-size: 1rem;
   color: white;
@@ -105,8 +103,8 @@ footer {
 footer ul {
   display: grid;
   justify-self: center;
-  margin: 0;
   list-style: none;
+  margin-left: 10px;
 }
 
 footer li {
@@ -115,8 +113,6 @@ footer li {
   width: 80px;
   height: 80px;
   margin: 10px;
-  margin: 0;
-  padding: 0;
   margin: 10px 10px 10px 0px;
   background-color: #0b7189;
 }
@@ -127,8 +123,21 @@ footer li:hover {
   transition: 0.5s;
 }
 
+#email-li:hover img,
+#phone-li:hover img {
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+#email-li:hover p,
+#phone-li:hover p {
+  opacity: 1;
+  transition: 1s;
+}
+
 footer a {
-  margin-top: 20px;
+  display: block;
   width: 80px;
   height: 80px;
 }
@@ -137,5 +146,25 @@ footer img {
   width: 40px;
   height: 40px;
   display: block;
-  margin: 0 auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+#email-image,
+#phone-image {
+  margin-top: 20px;
+}
+
+footer p {
+  font-family: "Dosis", sans-serif;
+  color: white;
+  margin-left: 5px;
+  margin-top: 31px;
+  font-size: 0.9rem;
+  opacity: 0;
+}
+
+#email-li p {
+  margin-top: 20px;
 }
