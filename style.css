@@ -108,7 +108,7 @@ article p {
 }
 
 article:hover p {
-  color: #67f3e3;
+  color: #73fbd3;
   transition: ease-out 0.5s;
 }
 
@@ -214,4 +214,110 @@ footer p {
 
 #email-li p {
   margin-top: 20px;
+}
+
+/* EXPERIENCE PAGE */
+
+#experience-nav {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+#download-cv {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  height: 100px;
+  margin: 10px;
+  margin-top: 0px;
+  background-color: #113e53;
+}
+
+#download-cv a {
+  margin: auto;
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#download-cv:hover a {
+  color: #73fbd3;
+  transform: translateY(2px);
+  transition: 0.5s;
+}
+
+#skills-section {
+  display: grid;
+  background-color: #113e53;
+  grid-row: 3;
+  grid-column: 2;
+  height: 370px;
+  margin: 0 10px;
+}
+
+#skills-section h2 {
+  grid-row: 1;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#skills-section:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
+#skills-section ul {
+  list-style: none;
+}
+
+#skills-section li {
+  background-color: #0b7189;
+  margin: 10px 10px 0px 10px;
+  height: 40px;
+}
+
+#skills-section p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+}
+
+#skills-section div {
+  background-color: #429d93;
+  height: 100%;
+}
+
+#skills-section li:hover div {
+  background-color: #4db4a8;
+  transition: 0.5s;
+}
+
+#skills-section #python-scale {
+  width: 90%;
+}
+
+#skills-section #html-scale {
+  width: 80%;
+}
+
+#skills-section #css-scale {
+  width: 80%;
+}
+
+#skills-section #javascript-scale {
+  width: 75%;
+}
+
+#skills-section #sql-scale {
+  width: 85%;
+}
+
+#skills-section #googling-scale {
+  width: 100%;
 }
