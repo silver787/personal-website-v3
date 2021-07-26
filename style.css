@@ -283,6 +283,27 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 90px auto;
+  }
+
+  nav {
+    width: 80px;
+    height: 290px;
+  }
+
+  nav li {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
   footer li {
     width: 60px;
     height: 60px;
@@ -632,16 +653,10 @@ footer p {
   margin-left: 5px;
 }
 
-#awards-section h4 {
+#awards-section p {
   color: white;
-  font-weight: normal;
   font-family: "Dosis", sans-serif;
-  margin-left: 5px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: #73fbd3;
-  text-decoration-thickness: 2px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
 
 #experience-footer {
