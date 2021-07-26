@@ -117,7 +117,7 @@ article:hover p {
 section.image-section {
   grid-column: 2;
   border: 10px solid #113e53;
-  height: 370px;
+  height: 250px;
   margin: 10px;
   margin-bottom: 0px;
 }
@@ -515,4 +515,108 @@ footer p {
 #work-experience-image-section img:hover {
   opacity: 0.9;
   transition: 0.5s;
+}
+
+#education-section {
+  grid-row: 7;
+  grid-column: 2;
+  display: grid;
+  background-color: #113e53;
+  margin: 10px 10px 0px 10px;
+}
+
+#education-section h2 {
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+#education-section ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#education-section li {
+  background-color: #0b7189;
+  margin: 0 10px;
+  min-height: 30px;
+}
+
+#education-section h3 {
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#education-section h4 {
+  color: white;
+  font-weight: normal;
+  font-family: "Dosis", sans-serif;
+  margin-left: 5px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #73fbd3;
+  text-decoration-thickness: 2px;
+  padding-bottom: 5px;
+}
+
+#awards-section {
+  grid-row: 8;
+  grid-column: 2;
+  display: grid;
+  background-color: #113e53;
+  margin: 10px 10px 0px 10px;
+}
+
+#awards-section h2 {
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+#awards-section ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#awards-section li {
+  background-color: #0b7189;
+  margin: 0 10px;
+  min-height: 30px;
+}
+
+#awards-section h3 {
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#awards-section h4 {
+  color: white;
+  font-weight: normal;
+  font-family: "Dosis", sans-serif;
+  margin-left: 5px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #73fbd3;
+  text-decoration-thickness: 2px;
+  padding-bottom: 5px;
+}
+
+#experience-footer {
+  grid-row: 9;
 }
