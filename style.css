@@ -43,7 +43,6 @@ nav {
   grid-row: 2;
   grid-column: 1;
   width: 100px;
-  height: 370px;
   margin-left: 10px;
   background-color: #113e53;
 }
@@ -104,8 +103,6 @@ article {
 article p {
   font-family: "Dosis", sans-serif;
   margin: 10px;
-  margin-top: 2.25vw;
-  margin-bottom: 2.25vw;
   color: white;
 }
 
