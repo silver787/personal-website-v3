@@ -210,7 +210,7 @@ footer li {
   display: flex;
   grid-row: 1;
   width: 80px;
-  line-height: 80px;
+  height: 80px;
   margin: 10px 10px 10px 0px;
   background-color: #0b7189;
 }
@@ -237,7 +237,7 @@ footer li:hover {
 footer a {
   display: block;
   width: 80px;
-  height: 80px;
+  line-height: 80px;
 }
 
 footer img {
