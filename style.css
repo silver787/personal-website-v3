@@ -44,13 +44,12 @@ nav li:hover {
 
 nav a {
   width: 80px;
-  height: 80px;
+  line-height: 80px;
   font-family: "Dosis", sans-serif;
   color: white;
   font-size: 1.1rem;
   text-decoration: none;
   text-align: center;
-  margin-top: 28px;
 }
 
 header {
@@ -211,7 +210,7 @@ footer li {
   display: flex;
   grid-row: 1;
   width: 80px;
-  height: 80px;
+  line-height: 80px;
   margin: 10px 10px 10px 0px;
   background-color: #0b7189;
 }
@@ -269,6 +268,17 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+  nav li {
+    width: 70px;
+    height: 70px;
+  }
+
+  nav a {
+    width: 70px;
+    line-height: 70px;
+    font-size: 0.95rem;
+  }
+
   footer li {
     width: 60px;
     height: 60px;
@@ -283,7 +293,7 @@ footer p {
 
   footer a {
     width: 30px;
-    height: 30px;
+    line-height: 30px;
   }
 
   footer p {
