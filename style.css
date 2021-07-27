@@ -280,15 +280,15 @@ footer p {
   }
 
   footer li {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   }
 
   footer img {
     width: 30px;
     height: 30px;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 13px;
+    margin-left: 13px;
   }
 
   footer a {
@@ -297,12 +297,12 @@ footer p {
   }
 
   footer p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   #email-image,
   #phone-image {
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
   #email-li p {
