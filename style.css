@@ -17,6 +17,7 @@ nav {
   background-color: #113e53;
   margin: 10px;
   margin-bottom: 0;
+  justify-self: center;
 }
 
 nav ul {
@@ -196,6 +197,7 @@ footer {
   display: grid;
   background-color: #113e53;
   margin: 10px;
+  justify-self: center;
 }
 
 footer ul {
