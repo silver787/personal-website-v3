@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #217486;
+  background-color: #14697c;
 }
 
 body {
@@ -54,10 +54,11 @@ nav a {
 
 header {
   grid-row: 2;
-  background-color: #113e53;
+  background-color: #0b7189;
   margin: 10px;
   text-align: center;
   display: grid;
+  border: 10px solid #113e53;
 }
 
 header h2 {
