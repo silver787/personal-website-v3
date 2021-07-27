@@ -53,7 +53,6 @@ nav a {
 }
 
 header {
-  grid-row: 2;
   background-color: #0b7189;
   margin: 10px;
   text-align: center;
