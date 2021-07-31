@@ -662,25 +662,25 @@ footer p {
 #contact-form textarea:hover,
 #contact-form input:hover {
   background-color: #4db4a8;
-  transform: translateX(3px);
-  transition: 0.5s;
 }
 
 #contact-form input {
-  height: 25px;
+  height: 40px;
 }
 
 #contact-form button {
   grid-column: 1;
   background-color: #0b7189;
   border-width: 0;
-  height: 25px;
+  height: 40px;
+  margin-top: 5px;
 }
 
 #contact-form button:hover {
-  background-color: #429d93;
+  background-color: #4db4a8;
   transform: translateY(2px);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 #contact-form textarea {
