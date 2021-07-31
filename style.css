@@ -617,3 +617,55 @@ footer p {
   font-family: "Dosis", sans-serif;
   padding: 5px;
 }
+
+/* SAY HI PAGE */
+
+#contact-form {
+  background-color: #113e53;
+  margin: 10px 10px 0 10px;
+}
+
+#contact-form form {
+  display: grid;
+  margin: 10px;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  grid-column: 1;
+  color: white;
+  width: 200px;
+  justify-self: center;
+  font-family: "Dosis", sans-serif;
+}
+
+#contact-form textarea,
+#contact-form input {
+  background-color: #429d93;
+  border-width: 0px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  outline: none;
+}
+
+#contact-form textarea:focus,
+#contact-form input:focus {
+  border: 2px solid white;
+}
+
+#contact-form input {
+  height: 25px;
+}
+
+#contact-form button {
+  grid-column: 1;
+  background-color: #0b7189;
+  border-width: 0;
+  height: 25px;
+}
+
+#contact-form textarea {
+  resize: none;
+}
