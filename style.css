@@ -618,6 +618,58 @@ footer p {
   padding: 5px;
 }
 
+/* PROJECTS PAGE */
+
+#gallery {
+  margin: 10px 10px 0px 10px;
+}
+#gallery ul {
+  display: grid;
+  list-style: none;
+  background-color: #0b7189;
+  border: 10px solid #113e53;
+}
+
+#gallery li {
+  width: 300px;
+  height: 300px;
+  margin: 40px 10px 40px 10px;
+  justify-self: center;
+  background-color: #113e53;
+}
+
+#gallery img {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #113e53;
+}
+
+#gallery figcaption {
+  background-color: #113e53;
+  font-family: "Dosis", sans-serif;
+  padding: 5px;
+  color: white;
+}
+
+#gallery li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#gallery li:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#gallery li:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#gallery li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
 /* SAY HI PAGE */
 
 #contact-form {
