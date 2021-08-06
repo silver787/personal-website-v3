@@ -694,6 +694,7 @@ footer p {
   justify-self: center;
   font-family: "Dosis", sans-serif;
   font-size: 1rem;
+  border-radius: 0;
 }
 
 #contact-form textarea,
