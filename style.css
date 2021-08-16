@@ -618,6 +618,58 @@ footer p {
   padding: 5px;
 }
 
+/* EDUCATION PAGE */
+#gcse-results {
+  display: grid;
+  background-color: #113e53;
+  margin: 0 10px 10px;
+  padding-bottom: 10px;
+}
+
+#gcse-results h2 {
+  grid-row: 1;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+#gcse-results:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
+#gcse-results ul {
+  list-style: none;
+}
+
+#gcse-results li {
+  background-color: #0b7189;
+  margin: 10px 10px 0px 10px;
+  height: 30px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  display: grid;
+}
+
+#gcse-results div {
+  height: 100%;
+  background-color: #429d93;
+}
+
+#gcse-results p {
+  margin-left: 2px;
+  align-self: center;
+}
+
+#gcse-results .nine-scale {
+  width: 100%;
+}
+#gcse-results .eight-scale {
+  width: 89%;
+}
 /* PROJECTS PAGE */
 
 #gallery {
