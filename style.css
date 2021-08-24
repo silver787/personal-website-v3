@@ -91,8 +91,14 @@ header h2:hover {
   color: white;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-weight: normal;
+}
+
+#about-me:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
 }
 
 #about-me #professional-about-me {
@@ -106,7 +112,7 @@ header h2:hover {
 }
 
 article {
-  background-color: #14697c;
+  background-color: #0b7189;
   padding: 0.25px;
 }
 
@@ -118,11 +124,6 @@ article {
   font-family: "Dosis", sans-serif;
   margin: 10px;
   color: white;
-}
-
-#about-me:hover p {
-  color: #73fbd3;
-  transition: ease-out 0.5s;
 }
 
 section.image-section {
@@ -499,6 +500,13 @@ footer p {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
+#work-experience-section:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
 #work-experience-section ul {
   list-style: none;
   margin-bottom: 10px;
@@ -571,6 +579,13 @@ footer p {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
+#education-section:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
 #education-section ul {
   list-style: none;
   margin-bottom: 10px;
@@ -619,6 +634,13 @@ footer p {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
+#awards-section:hover h2 {
+  color: #73fbd3;
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
 #awards-section ul {
   list-style: none;
   margin-bottom: 10px;
@@ -781,17 +803,29 @@ footer p {
   grid-row: 1;
 }
 
+#gallery li:nth-child(1):hover h2 {
+  transition: 0.5s;
+  transform: translateY(2px);
+}
+
 #gallery li:nth-child(2) {
   grid-row: 2;
+}
+
+#gallery li:nth-child(2):hover h2 {
+  transition: 0.5s;
+  transform: translateY(2px);
 }
 
 #gallery li:nth-child(3) {
   grid-row: 3;
 }
 
-#gallery li:nth-child(4) {
-  grid-row: 4;
+#gallery li:nth-child(3):hover h2 {
+  transition: 0.5s;
+  transform: translateY(2px);
 }
+
 /* SAY HI PAGE */
 
 #say-hi-page-description {
