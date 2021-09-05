@@ -76,6 +76,28 @@ header h2:hover {
   transform: translateY(2px);
 }
 
+@media only screen and (max-width: 600px) {
+  nav ul {
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+  }
+
+  nav li:nth-child(1),
+  nav li:nth-child(2),
+  nav li:nth-child(3) {
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  nav li:nth-child(4),
+  nav li:nth-child(5),
+  nav li:nth-child(6) {
+    grid-row: 2;
+  }
+}
+
+/* ABOUT ME PAGE*/
+
 #about-me {
   background-color: #113e53;
   text-align: center;
@@ -295,55 +317,12 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-  nav li {
-    width: 70px;
-    height: 70px;
+  #about-me #professional-about-me {
+    grid-column: 1 / span 2;
   }
 
-  nav a {
-    width: 70px;
-    line-height: 70px;
-    font-size: 0.95rem;
-  }
-
-  footer li {
-    width: 70px;
-    height: 70px;
-  }
-
-  footer img {
-    width: 38px;
-    height: 38px;
-    margin-top: 16px;
-    margin-left: 16px;
-  }
-
-  footer a {
-    width: 70px;
-    line-height: 100%;
-  }
-
-  footer li:nth-child(2) {
-    display: none;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-  }
-
-  #email-image,
-  #phone-image {
-    margin-top: 15px;
-  }
-
-  #email-li p {
-    margin-top: 18px;
-    margin-left: 3.5px;
-  }
-
-  #phone-li p {
-    margin-top: 28px;
-    margin-left: 2px;
+  #about-me #personal-about-me {
+    grid-column: 1 / span 2;
   }
 }
 
@@ -730,14 +709,14 @@ footer p {
 #projects-info {
   background-color: #0b7189;
   border: 10px solid #113e53;
-  margin: 0 10px 0 10px;
+  margin: auto 10px auto 10px;
+  min-height: 60px;
+  padding: 5px;
 }
 
 #projects-info p {
   color: white;
   font-family: "Dosis", sans-serif;
-  padding: 5px;
-  text-align: center;
 }
 
 #gallery {
@@ -792,11 +771,16 @@ footer p {
   padding: 5px;
   color: white;
   grid-column: 2;
-  margin-left: 10px;
   text-align: center;
-  margin: auto;
   background-color: #0b7189;
   margin: 10px;
+  display: table;
+}
+
+#gallery figcaption p {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
 
 #gallery li:nth-child(1) {
@@ -826,21 +810,34 @@ footer p {
   transform: translateY(2px);
 }
 
+@media only screen and (max-width: 600px) {
+  #gallery h2,
+  #gallery a {
+    grid-column: 1 / span 2;
+  }
+
+  #gallery img {
+    grid-column: 1 / span 2;
+    margin: auto;
+  }
+}
+
 /* SAY HI PAGE */
 
 #say-hi-page-description {
   color: white;
   font-family: "Dosis", sans-serif;
   border: 10px solid #113e53;
-  margin: 0 10px 0 10px;
+  margin: auto 10px auto 10px;
   padding: 4px;
-  height: 60px;
+  padding: 5px;
+  min-height: 60px;
   background-color: #0b7189;
   text-align: center;
 }
 
 #say-hi-page-description p {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 #contact-form {
