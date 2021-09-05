@@ -17,6 +17,7 @@ nav {
   background-color: #113e53;
   margin: 10px;
   margin-bottom: 0;
+  margin-left: 10px;
   justify-self: center;
 }
 
@@ -40,6 +41,10 @@ nav li:hover {
   background-color: #429d93;
   transform: translateY(2px);
   transition: 0.5s;
+}
+
+nav li:nth-child(6) {
+  display: none;
 }
 
 nav a {
@@ -93,6 +98,10 @@ header h2:hover {
   nav li:nth-child(5),
   nav li:nth-child(6) {
     grid-row: 2;
+  }
+
+  nav li:nth-child(6) {
+    display: unset;
   }
 }
 
@@ -319,6 +328,10 @@ footer p {
 @media only screen and (max-width: 600px) {
   #about-me #professional-about-me {
     grid-column: 1 / span 2;
+  }
+
+  #professional-content {
+    margin-right: 0;
   }
 
   #about-me #personal-about-me {
