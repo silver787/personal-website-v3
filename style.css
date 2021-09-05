@@ -17,7 +17,6 @@ nav {
   background-color: #113e53;
   margin: 10px;
   margin-bottom: 0;
-  margin-left: 10px;
   justify-self: center;
 }
 
@@ -832,6 +831,10 @@ footer p {
   #gallery img {
     grid-column: 1 / span 2;
     margin: auto;
+  }
+
+  #gallery figcaption {
+    grid-column: 1 / span 2;
   }
 }
 
