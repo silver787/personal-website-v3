@@ -729,6 +729,7 @@ footer p {
 #projects-info p {
   color: white;
   font-family: "Dosis", sans-serif;
+  text-align: center;
 }
 
 #gallery {
