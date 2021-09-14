@@ -35,7 +35,7 @@
         <li><a href="experience.html">Experience</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="say-hi.html">Say Hi</a></li>
+        <li><a href="say-hi.php">Say Hi</a></li>
         <li></li>
       </ul>
     </nav>
@@ -55,7 +55,7 @@
       />
     </section>
     <section id="contact-form">
-      <form action="">
+      <form action="https://formsubmit.co/tobyhogan44@gmail.com" method="POST" />
         <label for="fname">First Name: </label>
         <input type="text" id="fname" name="firstname" />
         <label for="fname">Last Name: </label>
