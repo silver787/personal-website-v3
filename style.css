@@ -755,6 +755,14 @@ footer p {
   grid-column: 1;
   grid-row: 2;
   align-self: flex-start;
+  border: 1px solid white;
+  margin: 10px 0 10px 10px;
+  filter: saturate(0%);
+}
+
+#gallery li:hover img {
+  transition: 0.5s;
+  filter: saturate(100%);
 }
 
 #gallery h2 {
@@ -816,6 +824,7 @@ footer p {
 
 #gallery li:nth-child(3) {
   grid-row: 3;
+  margin-bottom: 10px;
 }
 
 #gallery li:nth-child(3):hover h2 {
