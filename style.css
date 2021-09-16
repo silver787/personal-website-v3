@@ -681,6 +681,11 @@ footer p {
   transform: translateY(2px);
 }
 
+#gcse-results li:hover div {
+  background-color: #4db4a8;
+  transition: 0.5s;
+}
+
 #gcse-results ul {
   list-style: none;
 }
@@ -702,6 +707,7 @@ footer p {
 #gcse-results p {
   padding-left: 5px;
   align-self: center;
+  margin-top: 2px;
 }
 
 #gcse-results .nine-scale {
