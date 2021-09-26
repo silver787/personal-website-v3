@@ -1,5 +1,17 @@
-const container = document.querySelector(".data-container");
+const container = document.querySelector(".visualizer");
+var audio = new Audio()
+
+/* function playNote(rate) {
+  soundPlayer.src = "sound/beep-sound-effect"
+  soundPlayer.mozPreservesPitch = false;
+  soundPlayer.playbackRate = rate
+  soundPlayer.play();
+}
+
+*/
+
 const range = 1000;
+let width = 6;
 
 function generateBlocks() {
   for (let i = 0; i < 100; i += 1) {
@@ -8,7 +20,9 @@ function generateBlocks() {
     const block = document.createElement("div");
     block.classList.add("block");
     block.style.height = `${(value / range) * 300}px`;
-    block.style.transform = `translateX(${i * 5}px)`;
+    block.style.width = `${(Window.innerWidth / 100)}px`;
+    block.style.transform = `translateX(${i * width}px)`;
+
 
     const blockLabel = document.createElement("label");
     blockLabel.innerHTML = value;
@@ -45,6 +59,8 @@ async function bubbleSort(delay = 1) {
       blocks[j].style.backgroundColor = "#9d4242";
       blocks[j + 1].style.backgroundColor = "#9d4242";
 
+      // playNote(`${()}`)
+
       await new Promise(resolve =>
         setTimeout(() => {
           resolve();
@@ -59,8 +75,8 @@ async function bubbleSort(delay = 1) {
         blocks = document.querySelectorAll(".block");
       }
 
-      blocks[j].style.backgroundColor = "#0b7189";
-      blocks[j + 1].style.backgroundColor = "#0b7189";
+      blocks[j].style.backgroundColor = "#113e53";
+      blocks[j + 1].style.backgroundColor = "#113e53";
     }
 
     blocks[blocks.length - i - 1].style.backgroundColor = "#429d93";
