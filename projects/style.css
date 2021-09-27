@@ -31,6 +31,7 @@ html {
 }
 
 .block {
+  margin-bottom: 1px;
   position: absolute;
   bottom: 0;
   background-color: #113e53;

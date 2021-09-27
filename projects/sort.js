@@ -1,4 +1,7 @@
 const container = document.querySelector(".visualizer");
+// Gets the first element in the document with class "visualizer"
+// and assigns it to a variable so it can be used/accessed later
+
 var audio = new Audio()
 
 /* function playNote(rate) {
@@ -9,30 +12,50 @@ var audio = new Audio()
 }
 */
 
-
 const range = 1000;
 let blockNumber = 100;
-let viewportWidth = window.innerWidth - 40;
+let sectionWidth = window.innerWidth - 40;
+// Makes the width of the section available to work with equal to the
+// size of the whole window minus 40 pixels for margins of 20 on each side
 let margin = 1;
-let width = (viewportWidth / blockNumber) - margin;
+let width = (sectionWidth / blockNumber) - margin;
 
 function generateBlocks() {
   for (let i = 0; i < blockNumber; i += 1) {
     const value = Math.floor(Math.random() * range);
+    // Generates a random value between 0 and the range of the blocks number
 
     const block = document.createElement("div");
+    // Create an element of type "div" and assign it to the variable "block"
+    // Since this section of code is inside a loop it will be executed as many
+    // times as is needed.
+
     block.classList.add("block");
+    // Add the class "block" to the block variable
+
     block.style.height = `${(value / range) * 300}px`;
+    // Updates the height of the block element to a value
+    
     console.log(window.innerWidth);
     block.style.width = `${(width)}px`;
-    block.style.transform = `translateX(${i * (width + margin)}px)`;
+    block.style.transform = `translateX(${(i * (width + margin)) + 1}px)`;
+    // Moves the block to a position
+    // i * means that the space of the block from the left will
+    // be equal to the space per block multiplied by the current blocks
+    // position
 
 
     const blockLabel = document.createElement("label");
     blockLabel.innerHTML = value;
+    /* Creates a label HTML element for the block that can be used to access
+    it later.
+    
+    The innerHTML of the block is set to null, so no numbers appear above it.*/
 
     block.appendChild(blockLabel);
     container.appendChild(block);
+    /* Puts the block label element inside the block element and the 
+    block element inside the container element(div) */
   }
 }
 
