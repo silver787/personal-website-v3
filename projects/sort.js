@@ -4,24 +4,28 @@ var audio = new Audio()
 /* function playNote(rate) {
   soundPlayer.src = "sound/beep-sound-effect"
   soundPlayer.mozPreservesPitch = false;
-  soundPlayer.playbackRate = rate
+  soundPlayer.playbackRate = rate;
   soundPlayer.play();
 }
-
 */
 
+
 const range = 1000;
-let width = 6;
+let blockNumber = 100;
+let viewportWidth = window.innerWidth - 40;
+let margin = 1;
+let width = (viewportWidth / blockNumber) - margin;
 
 function generateBlocks() {
-  for (let i = 0; i < 100; i += 1) {
+  for (let i = 0; i < blockNumber; i += 1) {
     const value = Math.floor(Math.random() * range);
 
     const block = document.createElement("div");
     block.classList.add("block");
     block.style.height = `${(value / range) * 300}px`;
-    block.style.width = `${(Window.innerWidth / 100)}px`;
-    block.style.transform = `translateX(${i * width}px)`;
+    console.log(window.innerWidth);
+    block.style.width = `${(width)}px`;
+    block.style.transform = `translateX(${i * (width + margin)}px)`;
 
 
     const blockLabel = document.createElement("label");
@@ -59,7 +63,8 @@ async function bubbleSort(delay = 1) {
       blocks[j].style.backgroundColor = "#9d4242";
       blocks[j + 1].style.backgroundColor = "#9d4242";
 
-      // playNote(`${()}`)
+      // console.log(`${(blocks.length / 100)}`)
+      // playNote(`${(blocks.length / 100)}`);
 
       await new Promise(resolve =>
         setTimeout(() => {
