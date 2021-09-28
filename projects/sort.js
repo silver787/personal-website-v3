@@ -19,7 +19,7 @@ let sectionWidth = window.innerWidth - 40;
 // size of the whole window minus 40 pixels for margins of 20 on each side
 let margin = 1;
 let width = (sectionWidth / blockNumber) - margin;
-
+ 
 function generateBlocks() {
   for (let i = 0; i < blockNumber; i += 1) {
     const value = Math.floor(Math.random() * range);
@@ -89,11 +89,6 @@ async function bubbleSort(delay = 1) {
       // console.log(`${(blocks.length / 100)}`)
       // playNote(`${(blocks.length / 100)}`);
 
-      await new Promise(resolve =>
-        setTimeout(() => {
-          resolve();
-        }, delay)
-      );
 
       const value1 = Number(blocks[j].childNodes[0].innerHTML);
       const value2 = Number(blocks[j + 1].childNodes[0].innerHTML);
@@ -110,6 +105,8 @@ async function bubbleSort(delay = 1) {
     blocks[blocks.length - i - 1].style.backgroundColor = "#429d93";
   }
 }
+
+// This is a test comment
 
 generateBlocks();
 bubbleSort();
