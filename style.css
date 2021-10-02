@@ -366,8 +366,35 @@ footer p {
 #skills-section {
   display: grid;
   background-color: #113e53;
-  height: 503px;
   margin: 0 10px;
+}
+
+#skills-section ul {
+  display: grid;
+  list-style: none;
+}
+
+#skills-section li {
+  grid-row: 1;
+}
+
+#skills-section h3 {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+#skills-section img {
+  width: 100px;
+  height: 100px;
+  margin-left: 66px;
+  filter: saturate(0%);
+}
+
+#skills-section img:hover {
+  transition: 0.5s;
+  filter: saturate(100%);
 }
 
 #skills-section h2 {
@@ -377,83 +404,6 @@ footer p {
   text-align: center;
   margin-top: 10px;
   font-weight: normal;
-}
-
-#skills-section:hover h2 {
-  color: #73fbd3;
-  transition: 0.5s;
-  transform: translateY(2px);
-}
-
-#skills-section ul {
-  list-style: none;
-}
-
-#skills-section li {
-  background-color: #0b7189;
-  margin: 10px 10px 0px 10px;
-  height: 30px;
-}
-
-#skills-section p {
-  margin-top: 5px;
-  margin-left: 5px;
-  font-family: "Dosis", sans-serif;
-  color: white;
-}
-
-#skills-section div {
-  background-color: #429d93;
-  height: 100%;
-}
-
-#skills-section li:hover div {
-  background-color: #4db4a8;
-  transition: 0.5s;
-}
-
-#skills-section #organization-scale {
-  width: 93%;
-}
-
-#skills-section #problem-solving-scale {
-  width: 86%;
-}
-
-#skills-section #resilience-scale {
-  width: 88%;
-}
-
-#skills-section #communication-scale {
-  width: 82%;
-}
-
-#skills-section #learning-and-adaptability-scale {
-  width: 92%;
-}
-
-#skills-section #python-scale {
-  width: 90%;
-}
-
-#skills-section #html-scale {
-  width: 83%;
-}
-
-#skills-section #css-scale {
-  width: 81%;
-}
-
-#skills-section #javascript-scale {
-  width: 75%;
-}
-
-#skills-section #sql-scale {
-  width: 88%;
-}
-
-#skills-section #googling-scale {
-  width: 100%;
 }
 
 #experience-image-section {
