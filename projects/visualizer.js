@@ -1,13 +1,30 @@
 const container = document.querySelector(".visualizer");
-const containerWidth = window.innerWidth - 40;
+const containerWidth = window.innerWidth - 40 - 1;
 const delay = 1;
-const range = 350;
+const range = 325;
 
 const blockNumber = 50;
 const blockMargin = 1;
 const blockWidth = (containerWidth / blockNumber) - blockMargin;
 
-const audio = new Audio("sound/beep-sound-effect.mp3");
+const audioArray = [];
+
+for (let i = 0; i < 20; i++) {
+    audioArray[i] = new Audio("sound/click-sound-effect.mp3");
+}
+
+var audioCount = 0;
+
+
+function playAudio() {
+    audioArray[audioCount].play();
+    audioCount += 1;
+
+    if (audioCount > 19) {
+        audioCount = 0;
+    }
+}
+
 
 function randomArrayGenerator(){
     let usedNumsArray = [];
@@ -37,7 +54,7 @@ function generateBlocks() {
         block.classList.add("block");
         block.style.height = `${((value / blockNumber) * range) + 0.1 * range}px`;
         block.style.width = blockWidth + `px`;
-        block.style.transform = `translateX(${count * (blockWidth + blockMargin) + 2}px)`;
+        block.style.transform = `translateX(${count * (blockWidth + blockMargin) + 1}px)`;
         block.id = ((value / blockNumber) * range) + 0.1 * range;
 
         container.appendChild(block);
@@ -81,7 +98,6 @@ async function bubbleSort() {
                 await swap(blocks[j + 1], blocks[j]);
 
                 blocks = document.querySelectorAll(".block")
-                audio.play();
             }
             else {
                 setTimeout(() => { }, delay);
@@ -92,10 +108,10 @@ async function bubbleSort() {
         }
 
         blocks[blocks.length - i - 1].style.backgroundColor = "#429d93";
+        playAudio();
     }
 }
 
 
 generateBlocks();
-bubbleSort();
 
