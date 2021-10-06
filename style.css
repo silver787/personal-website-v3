@@ -123,6 +123,7 @@ header h2:hover {
   font-weight: 700;
   margin-bottom: 7px;
   font-weight: normal;
+  grid-row: 1;
 }
 
 #about-me:hover h2 {
@@ -133,27 +134,28 @@ header h2:hover {
 
 #about-me #professional-about-me {
   grid-column: 1;
-  align-self: flex-start;
+  position: relative;
+  display: grid;
+  grid-row: 2;
+  background-color: #0b7189;
+  margin-right: 5px;
+  height: 100%;
 }
 
 #about-me #personal-about-me {
   grid-column: 2;
-  align-self: flex-start;
-}
-
-article {
+  grid-row: 2;
   background-color: #0b7189;
-  padding: 0.25px;
-}
-
-#professional-content {
-  margin-right: 10px;
+  height: 100%;
+  margin-left: 5px;
+  display: grid;
 }
 
 #about-me p {
   font-family: "Dosis", sans-serif;
   margin: 10px;
   color: white;
+  align-self: center;
 }
 
 section.image-section {
@@ -376,6 +378,7 @@ footer p {
 
 #skills-section li {
   grid-row: 1;
+  display: grid;
 }
 
 #skills-section h3 {
@@ -388,11 +391,29 @@ footer p {
 #skills-section img {
   width: 100px;
   height: 100px;
-  margin-left: 66px;
+  justify-self: center;
   filter: saturate(0%);
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
-#skills-section img:hover {
+#skills-section li:nth-child(1) img {
+  transform: scale(1.1);
+}
+
+#skills-section li:nth-child(3) img {
+  transform: scale(0.93);
+}
+
+#skills-section li:nth-child(4) img {
+  transform: scale(0.93);
+}
+
+#skills-section li:nth-child(5) img {
+  transform: scale(0.9);
+}
+
+#skills-section li:hover img {
   transition: 0.5s;
   filter: saturate(100%);
 }
