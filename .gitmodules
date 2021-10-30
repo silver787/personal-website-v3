@@ -1,0 +1,3 @@
+[submodule "projects/dungeon-crawler"]
+	path = projects/dungeon-crawler
+	url = https://github.com/KrypticSilver/dungeon-crawler
