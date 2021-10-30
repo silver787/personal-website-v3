@@ -1,3 +1,6 @@
 [submodule "projects/dungeon-crawler"]
 	path = projects/dungeon-crawler
 	url = https://github.com/KrypticSilver/dungeon-crawler
+[submodule "projects/sort-visualizer"]
+	path = projects/sort-visualizer
+	url = https://github.com/KrypticSilver/sort-visualizer
